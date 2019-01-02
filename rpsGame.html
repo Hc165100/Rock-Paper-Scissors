@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="src/rpsGame.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.js">
+
+	</script>
+	<title>Rock, Paper, Scissors Game</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<div id="gameWindow">
+		<div id="introWin">
+			<h3><span id="rockSpan">ROCK</span> <span id="paperSpan">PAPER</span> <span id="scissorsSpan">SCISSORS</span></h3>
+			<p>READY TO PLAY?</p>
+			<button id="startBtn">Start</button>
+    </div>
+    <div id="playSpace">
+      <div id="playerScore"><strong>Player</strong> <p id="playerScoreNum">0</p></div>
+      <div id="compScore"><strong>Computer</strong> <p id="compScoreNum">0</p></div>
+      <div id="compSide"> 
+        <img id="compImg" />
+        <h3 id="compName"></h3>
+        <button id="resetBtn">Play Again?</button>
+      </div>
+      <div id="playerSide">
+      <img id="playerImg" src="src/images/questionMark.jpg">
+      <br />
+      <form>
+        <input type="radio" name="playerChoice" id="choice1" value="rock"/>Rock
+        <input type="radio" name="playerChoice" id="choice2" value="paper"/>Paper
+        <input type="radio" name="playerChoice" id="choice3" value="scissors"/>Scissors
+      </form>
+      <button id="playBtn">Play</button>
+      </div>
+      </div>
+	</div>
+    <script src="src/rpsGame.js"></script>
+  </body>
+</html>

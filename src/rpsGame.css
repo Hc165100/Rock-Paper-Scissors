@@ -1,0 +1,119 @@
+body {
+  font-family: sans-serif;
+}
+
+#gameWindow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 500px;
+  width: 300px;
+  border: 2px solid black;
+  background-color: orange;
+}
+
+#introWin {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: 200px;
+  background-color: orange;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+
+#rockSpan {
+  color: gray;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: -2px 1px darkslategray;
+  font-size: 1.4em;
+}
+
+#paperSpan {
+  color: peachpuff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-shadow: 1px 1px chocolate;
+  font-size: 1.2em;
+}
+
+#scissorsSpan {
+  color: silver;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 1px -1px midnightblue;
+  font-size: 1.1em;
+}
+
+#startBtn {
+  display: block;
+  border-radius: 10px;
+  border: outset;
+  background-color: tan;
+}
+
+#playSpace {
+  height: 500px;
+  width: 300px;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-items: center;
+  z-index: 1;
+}
+
+#playerScore {
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  left: 25px;
+}
+
+#compScore {
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  right: 18px;
+}
+
+#playerSide {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-items: center;
+  align-items: center;
+  top: 150px;
+  left: 40px;
+}
+
+#playerImg {
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
+}
+
+#playBtn {
+  margin-top: 10px;
+}
+
+#compSide {
+  position: absolute;
+  top: 50px;
+  left: 95px;
+  display: none;
+  flex-direction: column;
+  justify-items: center;
+  height: 150px;
+  width: 100px;
+}
+
+#compImg {
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
+}
+
+#compName {
+  text-align: center;
+}
