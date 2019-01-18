@@ -83,6 +83,7 @@ function compReveal() {
 let playerSide = document.getElementById("playerSide");
 
 function playGame() {
+  playBtn.syle.opacity = 0;
   let gameAnimate = setInterval(windowSlide, 5);
   let pos = 150;
   function windowSlide() {
@@ -101,6 +102,7 @@ playBtn.addEventListener("click", playGame);
 
 //Reset function begins here.
 function playerReset() {
+  playBtn.style.opacity = 0;
   let resetAnimate = setInterval(resetSlide, 5);
   let pos = 250;
   function resetSlide() {
